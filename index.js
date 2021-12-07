@@ -1,17 +1,71 @@
-function weakFunction() {
-    document.getElementById("work_time").innerHTML = "32hrs";
-    document.getElementById("play_time").innerHTML = "10hrs";
-    document.getElementById("study_time").innerHTML = "4hrs";
-    document.getElementById("social_time").innerHTML = "5hrs";
-    document.getElementById("exercise_time").innerHTML = "4hrs";
-    document.getElementById("self_care_time").innerHTML = "2hrs";
+const a1 = ["work_time",
+    "play_time",
+    "study_time",
+    "social_time",
+    "exercise_time",
+    "self_care_time"
+]
 
-    document.getElementById("work_previous_time").innerHTML = "Last week - 36hrs";
-    document.getElementById("play_previous_time").innerHTML = "Last week - 8hrs";
-    document.getElementById("study_previous_time").innerHTML = "Last week - 7hrs";
-    document.getElementById("social_previous_time").innerHTML = "Last week - 10hrs";
-    document.getElementById("exercise_previous_time").innerHTML = "Last week - 5hrs";
-    document.getElementById("self_care_previous_time").innerHTML = "Last week - 2hrs";
+const a2 = ["work_previous_time",
+    "play_previous_time",
+    "study_previous_time",
+    "social_previous_time",
+    "exercise_previous_time",
+    "self_care_previous_time"
+]
+
+const a3 = ["32hrs",
+    "10hrs",
+    "4hrs",
+    "5hrs",
+    "4hrs",
+    "2hrs"
+]
+
+const a4 = ["36hrs",
+    "8hrs",
+    "7hrs",
+    "10hrs",
+    "5hrs",
+    "2hrs"
+]
+
+const a5 = ["103hrs",
+    "23hrs",
+    "13hrs",
+    "21hrs",
+    "11hrs",
+    "7hrs"
+]
+
+const a6 = ["128hrs",
+    "29hrs",
+    "19hrs",
+    "23hrs",
+    "18hrs",
+    "11hrs"
+]
+const a7 = ["5hrs",
+    "1hr",
+    "4hrs",
+    "2hrs",
+    "3hrs",
+    "6hrs"
+]
+
+const a8 = ["7hrs",
+    "2hrs",
+    "1hr",
+    "3hrs",
+    "1hr",
+    "1hr"
+]
+
+function weakFunction() {
+    for (let i = 0; i <= 6; i++) {
+        document.getElementById(a1[i]).innerHTML = a3[i];
+        document.getElementById(a2[i]).innerHTML = "Last week - " + a4[i];
+    }
 
     document.getElementById("text_week").style.color = "white"
     document.getElementById("text_daily").style.color = "hsl(235, 45%, 61%)"
@@ -19,20 +73,10 @@ function weakFunction() {
 }
 
 function monthFunction() {
-    document.getElementById("work_time").innerHTML = "103hrs";
-    document.getElementById("play_time").innerHTML = "23hrs";
-    document.getElementById("study_time").innerHTML = "13hrs";
-    document.getElementById("social_time").innerHTML = "21hrs";
-    document.getElementById("exercise_time").innerHTML = "11hrs";
-    document.getElementById("self_care_time").innerHTML = "7hrs";
-
-    document.getElementById("work_previous_time").innerHTML = "Last month - 128hrs";
-    document.getElementById("play_previous_time").innerHTML = "Last month - 29hrs";
-    document.getElementById("study_previous_time").innerHTML = "Last month - 19hrs";
-    document.getElementById("social_previous_time").innerHTML = "Last month - 23hrs";
-    document.getElementById("exercise_previous_time").innerHTML = "Last month - 18hrs";
-    document.getElementById("self_care_previous_time").innerHTML = "Last month - 11hrs";
-
+    for (let i = 0; i <= 6; i++) {
+        document.getElementById(a1[i]).innerHTML = a5[i];
+        document.getElementById(a2[i]).innerHTML = "Last month - " + a6[i];
+    }
 
     document.getElementById("text_month").style.color = "white"
     document.getElementById("text_daily").style.color = "hsl(235, 45%, 61%)"
@@ -40,20 +84,10 @@ function monthFunction() {
 }
 
 function dayFunction() {
-    document.getElementById("work_time").innerHTML = "5hrs";
-    document.getElementById("play_time").innerHTML = "1hr";
-    document.getElementById("study_time").innerHTML = "4hrs";
-    document.getElementById("social_time").innerHTML = "2hrs";
-    document.getElementById("exercise_time").innerHTML = "3hrs";
-    document.getElementById("self_care_time").innerHTML = "6hrs";
-
-    document.getElementById("work_previous_time").innerHTML = "Yesterday - 7hrs";
-    document.getElementById("play_previous_time").innerHTML = "Yesterday - 2hrs";
-    document.getElementById("study_previous_time").innerHTML = "Yesterday - 1hr";
-    document.getElementById("social_previous_time").innerHTML = "Yesterday - 3hrs";
-    document.getElementById("exercise_previous_time").innerHTML = "Yesterday - 1hr";
-    document.getElementById("self_care_previous_time").innerHTML = "Yesterday - 1hr";
-
+    for (let i = 0; i <= 6; i++) {
+        document.getElementById(a1[i]).innerHTML = a7[i];
+        document.getElementById(a2[i]).innerHTML = "Yesterday - " + a8[i];
+    }
 
     document.getElementById("text_daily").style.color = "white"
     document.getElementById("text_week").style.color = "hsl(235, 45%, 61%)"
