@@ -19,32 +19,26 @@ body {
 
 .work {
     grid-area: work;
-    width: 90%;
 }
 
 .play {
     grid-area: play;
-    width: 90%;
 }
 
 .study {
     grid-area: study;
-    width: 90%;
 }
 
 .exercise {
     grid-area: exercise;
-    width: 90%;
 }
 
 .social {
     grid-area: social;
-    width: 90%;
 }
 
 .self_care {
     grid-area: self_care;
-    width: 90%;
 }
 
 .self_care h4 {
@@ -215,7 +209,7 @@ body {
 
 @media only screen and (max-width: 1024px) and (min-width: 1px) {
     body {
-        padding: 0.8rem;
+        padding: 0;
     }
     .main_div {
         display: grid;
@@ -276,5 +270,26 @@ body {
     }
     .attribution {
         padding-top: 5rem;
+    }
+    .person {
+        max-width: 25rem;
+    }
+    .work {
+        max-width: 25rem;
+    }
+    .play {
+        max-width: 25rem;
+    }
+    .study {
+        max-width: 25rem;
+    }
+    .exercise {
+        max-width: 25rem;
+    }
+    .social {
+        max-width: 25rem;
+    }
+    .self_care {
+        max-width: 25rem;
     }
 }
