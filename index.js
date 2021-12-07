@@ -60,36 +60,49 @@ const a8 = ["7hrs",
     "1hr",
     "1hr"
 ]
+const a9 = ["text_week",
+    "text_daily",
+    "text_month"
+]
 
 function weakFunction() {
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i <= 5; i++) {
         document.getElementById(a1[i]).innerHTML = a3[i];
         document.getElementById(a2[i]).innerHTML = "Last week - " + a4[i];
     }
-
-    document.getElementById("text_week").style.color = "white"
-    document.getElementById("text_daily").style.color = "hsl(235, 45%, 61%)"
-    document.getElementById("text_month").style.color = "hsl(235, 45%, 61%)"
+    for (let i = 0; i <= 2; i++) {
+        if (a9[i] == "text_week") {
+            document.getElementById(a9[i]).style.color = "white"
+        } else {
+            document.getElementById(a9[i]).style.color = "hsl(235, 45%, 61%)"
+        }
+    }
 }
 
 function monthFunction() {
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i <= 5; i++) {
         document.getElementById(a1[i]).innerHTML = a5[i];
         document.getElementById(a2[i]).innerHTML = "Last month - " + a6[i];
     }
-
-    document.getElementById("text_month").style.color = "white"
-    document.getElementById("text_daily").style.color = "hsl(235, 45%, 61%)"
-    document.getElementById("text_week").style.color = "hsl(235, 45%, 61%)"
+    for (let i = 0; i <= 2; i++) {
+        if (a9[i] == "text_month") {
+            document.getElementById(a9[i]).style.color = "white"
+        } else {
+            document.getElementById(a9[i]).style.color = "hsl(235, 45%, 61%)"
+        }
+    }
 }
 
 function dayFunction() {
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i <= 5; i++) {
         document.getElementById(a1[i]).innerHTML = a7[i];
         document.getElementById(a2[i]).innerHTML = "Yesterday - " + a8[i];
     }
-
-    document.getElementById("text_daily").style.color = "white"
-    document.getElementById("text_week").style.color = "hsl(235, 45%, 61%)"
-    document.getElementById("text_month").style.color = "hsl(235, 45%, 61%)"
+    for (let i = 0; i <= 2; i++) {
+        if (a9[i] == "text_daily") {
+            document.getElementById(a9[i]).style.color = "white"
+        } else {
+            document.getElementById(a9[i]).style.color = "hsl(235, 45%, 61%)"
+        }
+    }
 }
