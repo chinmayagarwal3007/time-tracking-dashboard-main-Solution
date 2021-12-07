@@ -15,30 +15,51 @@ body {
 
 .person {
     grid-area: person;
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .work {
     grid-area: work;
+    height: 80%;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .play {
     grid-area: play;
+    height: 80%;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .study {
     grid-area: study;
+    height: 80%;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .exercise {
     grid-area: exercise;
+    height: 80%;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .social {
     grid-area: social;
+    height: 80%;
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .self_care {
     grid-area: self_care;
+    height: 80%;
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .self_care h4 {
@@ -126,7 +147,7 @@ body {
 
 .about_activity {
     background-color: hsl(235, 46%, 20%);
-    border-radius: 0 0 0.813rem 0.813rem;
+    border-radius: 0.813rem 0.813rem 0.813rem 0.813rem;
     padding-left: 1rem;
 }
 
@@ -138,7 +159,7 @@ body {
 .img_person {
     background-color: hsl(246, 80%, 60%);
     padding: 1rem 0 0.5rem 1rem;
-    border-radius: 0.813rem 0.813rem 0 0;
+    border-radius: 0.813rem 0.813rem 0.813rem 0.813rem;
     font-size: 1.25rem;
 }
 
